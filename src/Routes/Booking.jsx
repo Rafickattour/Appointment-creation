@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import { addData } from "../lib/api";
-// import SnackBar from '../components/UI/SnackBar';
+import SnackBar from '../components/UI/SnackBar';
 import OauthContext from '../store/oauth-context';
 import NewAppointment from "../components/AppointmentsForm/NewAppointment";
 
