@@ -99,13 +99,13 @@ export const OauthContextProvider = ({ children }) => {
             let appData, serviceData, appDetails;
 
             switch (currentPath) {
-                case '/':
+                case '/appointment-creation':
                     appData = await getData('ntw_appointments', token);
                     break;
-                case '/booking':
+                case '/appointment-creation/booking':
                     serviceData = await getData('msgov_services', token);
                     break;
-                case `/appointments/${id}`:
+                case `/appointment-creation/appointments/${id}`:
                     serviceData = await getData('msgov_services', token);
                     appDetails = await getDataId('ntw_appointments', token, id);
                     break;
