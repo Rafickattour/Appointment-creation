@@ -1,6 +1,6 @@
-import Snackbar from '@mui/material/Snackbar';
+import { Snackbar } from "@mui/material";
 
-export default function SnackBar(props) {
+export default function Toast(props) {
     const { open, autoHideDuration, onClose, message } = props;
 
     return (

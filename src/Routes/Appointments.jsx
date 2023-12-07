@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import SnackBar from '../components/UI/SnackBar';
+// import SnackBar from '../components/UI/Toast';
 import OauthContext from '../store/oauth-context';
 import AppointmentsList from "../components/Appointments/AppointmentsList";
 
@@ -12,10 +12,10 @@ export default function Appointments() {
     return (
         <>
             <AppointmentsList data={appointments} />
-            <SnackBar
+            {/* <SnackBar
                 open={open === 'snackbar'} autoHideDuration={1500}
                 onClose={closeHandler} message={'Request Send Sucessfully'}
-            />
+            /> */}
         </>
     );
 };
