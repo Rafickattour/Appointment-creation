@@ -1,0 +1,142 @@
+.details-container {
+    padding: .5rem 1rem;
+}
+
+.header button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8rem;
+    font-size: 1rem;
+    background: none;
+    border-radius: 4px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 1.7rem;
+}
+
+.header div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header button {
+    padding: .5rem 1rem;
+    outline-offset: 2px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+}
+
+.header button:focus-visible {
+    border: 2px solid var(--color-white);
+    outline: 2px solid var(--color-primary);
+}
+
+.content-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.side-container {
+    width: 20rem;
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+    /* max-height: 5rem; */
+}
+
+.nav-list {
+    color: #333;
+    padding: .5rem 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.nav-list:hover {
+    color: #FCFBFC;
+    background-color: var(--color-primary);
+}
+
+.active {
+    color: #FCFBFC;
+    background-color: #8F2038;
+}
+
+.infoIcon,
+.calendarIcon {
+    margin-inline: 1rem;
+}
+
+.nav-list>div {
+    flex: 0 0 13.5rem;
+}
+
+.booking-form {
+    flex: 0 0 70.5%;
+}
+
+.booking-form>div {
+    display: grid;
+    gap: 1rem 3rem;
+    padding: 1rem 2rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.booking-form :where(label, h3) {
+    color: #222;
+}
+
+.booking-form label {
+    font-size: 1.2rem;
+}
+
+.time-side h3 {
+    text-align: center;
+}
+
+@media screen and (max-width:75em) {
+    .content-container {
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:24em) {
+    .header {
+        padding-right: 1%;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .side-container {
+        width: 18rem;
+    }
+
+    .nav-list>div {
+        flex: 0 0 12rem;
+    }
+
+    .booking-form {
+        padding: 1rem;
+    }
+}

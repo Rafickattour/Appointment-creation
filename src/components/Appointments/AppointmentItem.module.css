@@ -1,0 +1,40 @@
+.appointment {
+    padding: .5rem;
+    cursor: pointer;
+    flex: 0 0 19rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+.appointment>* {
+    display: flex;
+}
+
+.top-side {
+    justify-content: space-between;
+}
+
+.top-side * {
+    color: #222;
+}
+
+.effect {
+    padding: .2rem !important;
+}
+
+.middle-side,
+.bottom-side {
+    gap: .5rem;
+    color: #444;
+}
+
+.timeIcon,
+.dateIcon {
+    scale: .7;
+}
+
+@media screen and (max-width:23em) {
+    .appointment {
+        flex: 0 0 100%;
+    }
+}

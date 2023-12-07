@@ -1,0 +1,101 @@
+.appointment-container {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.header,
+.profile,
+.actions,
+.actions>div:last-child,
+.appointment-container ul {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding-right: 1%;
+    justify-content: space-between;
+}
+
+.header h1 {
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.actions {
+    gap: 1rem;
+}
+
+.actions>div:first-child div {
+    border-radius: 50px;
+}
+
+.actions>div:last-child {
+    cursor: pointer;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    background: var(--color-primary);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+}
+
+.actions>div:last-child:hover {
+    border: 2px solid var(--color-white);
+    outline: 2px solid var(--color-primary);
+}
+
+.addIcon {
+    color: var(--color-white);
+}
+
+.actions button {
+    color: var(--color-white);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: inherit;
+    background: none;
+}
+
+.profile {
+    gap: 1.5em;
+    padding: 1rem 1rem 1.5rem;
+}
+
+.profile h3 {
+    color: #222;
+}
+
+.profileIcon {
+    color: var(--color-primary);
+    scale: 2.5;
+}
+
+.appointment-container ul {
+    flex-wrap: wrap;
+    gap: 1rem 2.1rem;
+    /* max-height: 27rem; */
+}
+
+.result {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:35em) {
+    .header {
+        align-items: flex-start;
+    }
+
+    .actions {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .actions>div:first-child {
+        order: 2;
+    }
+}

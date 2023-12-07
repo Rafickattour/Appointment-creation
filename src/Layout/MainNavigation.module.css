@@ -1,0 +1,67 @@
+.header {
+    width: 100%;
+    height: 7dvh;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    transition: opacity .3s ease-in-out;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: 10;
+}
+
+.list,
+.header nav {
+    height: 100%;
+}
+
+.list,
+.list a,
+.list li {
+    display: flex;
+    align-items: center;
+}
+
+.list a,
+.list li {
+    align-self: stretch;
+}
+
+.list {
+    gap: 2rem;
+}
+
+.list a {
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+
+.list a:hover {
+    color: var(--color-primary);
+    background: var(--color-white);
+}
+
+.header div {
+    display: flex;
+    color: var(--color-white);
+}
+
+.searchIcon {
+    cursor: pointer;
+}
+
+.searchIcon:hover {
+    filter: drop-shadow(0 0 1px var(--color-white));
+}
+
+.searchIcon,
+.profileIcon {
+    margin: auto 1rem;
+    scale: 1.5;
+}

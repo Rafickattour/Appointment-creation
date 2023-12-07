@@ -1,0 +1,123 @@
+:root {
+  font-family: Calibri, Cairo;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87); */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --color-primary: #830823;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: #eee;
+} */
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 2px solid #eee;
+}
+
+html {
+  /* font-size: 62.5%; */
+  font-family: sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loading {
+  font-size: 1.2rem;
+}
+
+.loading:after {
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: '\2026';
+}
+
+/* select class */
+.css-q8hpuo-MuiFormControl-root .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+.css-1nrlq1o-MuiFormControl-root .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: var(--color-primary);
+}
+
+.css-q8hpuo-MuiFormControl-root .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-1nrlq1o-MuiFormControl-root .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--color-primary);
+}
+
+/* calendar class */
+.css-1q04gal-MuiDateCalendar-root .css-innj4t-MuiPickersYear-yearButton.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-innj4t-MuiPickersYear-yearButton.Mui-selected:focus,
+.css-1q04gal-MuiDateCalendar-root .css-innj4t-MuiPickersYear-yearButton.Mui-selected:hover,
+.css-1q04gal-MuiDateCalendar-root .css-jgls56-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-jgls56-MuiButtonBase-root-MuiPickersDay-root.Mui-selected:hover,
+.css-1q04gal-MuiDateCalendar-root .css-jgls56-MuiButtonBase-root-MuiPickersDay-root:focus.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-1u23akw-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-1u23akw-MuiButtonBase-root-MuiPickersDay-root.Mui-selected:hover,
+.css-1q04gal-MuiDateCalendar-root .css-1u23akw-MuiButtonBase-root-MuiPickersDay-root:focus.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-l4pl75-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-l4pl75-MuiButtonBase-root-MuiPickersDay-root.Mui-selected:hover,
+.css-1q04gal-MuiDateCalendar-root .css-18wn1yb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-1q04gal-MuiDateCalendar-root .css-18wn1yb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected:hover {
+  background-color: var(--color-primary);
+}
+
+/* snackbar class */
+/* div.css-7cl038-MuiSnackbar-root .MuiSnackbarContent-root {
+  min-width: 10rem;
+} */
+div.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+  min-width: 10rem;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 2.5rem;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 2.5rem;
+  }
+}
