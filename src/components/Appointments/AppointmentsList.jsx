@@ -54,7 +54,7 @@ export default function AppointmentsList({ data }) {
                             onChange={searchHandler}
                             label={!searchQuery ? 'Search' : 'Searching'}
                         /> : null}
-                    <div onClick={() => navigate('/booking')}>
+                    <div onClick={() => navigate('/appointment-creation/booking')}>
                         <AddIcon className={styles.addIcon} />
                         <button>Create</button>
                     </div>
@@ -73,7 +73,7 @@ export default function AppointmentsList({ data }) {
                             startTime={formatHour(item.ntw_startdate)}
                             endTime={formatHour(item.ntw_enddate)}
                             scheduledDate={formatDate(item.ntw_startdate)}
-                            onClick={() => navigate(`/appointments/${item.ntw_appointmentid}`)}
+                            onClick={() => navigate(`/appointment-creation/appointments/${item.ntw_appointmentid}`)}
                         />
                     ))
                     }
