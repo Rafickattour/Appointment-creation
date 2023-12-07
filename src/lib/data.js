@@ -1,6 +1,6 @@
 export const LINKS_DATA = [
     {
-        url: '/'
+        url: '/appointment-creation'
     }
 ];
 

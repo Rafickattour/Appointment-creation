@@ -11,21 +11,21 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/appointment-creation",
     element: <Root />,
     children: [
       {
-        path: "/",
+        path: "/appointment-creation",
         element: <Appointments />
       },
       {
-        path: "/appointments/:id",
+        path: "/appointment-creation/appointments/:id",
         element: <Details />
       }
     ]
   },
   {
-    path: "/booking",
+    path: "/appointment-creation/booking",
     element: <Booking />
   }
 ]);

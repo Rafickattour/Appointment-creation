@@ -26,7 +26,7 @@ export default function MainNavigation() {
                 <ul className={styles.list}>
                     {LINKS_DATA.map((link, index) => (
                         <li key={index}>
-                            <Link to={link.url}>{currentPath === '/' ? 'Scheduler' : 'Appointments'}</Link>
+                            <Link to={link.url}>{currentPath === '/appointment-creation' ? 'Scheduler' : 'Appointments'}</Link>
                         </li>
                     ))}
                 </ul>
