@@ -16,7 +16,7 @@ export default function Booking() {
     const { open, openHandler, closeHandler } = oauthCtx;
 
     function redirectHandler() {
-        navigate('/', { replace: true });
+        navigate('/appointment-creation', { replace: true });
     };
 
     const addDataHandler = async (data) => {
