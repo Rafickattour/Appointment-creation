@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://rafickattour.github.io/appointment-creation',
+        target: 'http://localhost:5173',
         changeOrigin: true
       },
     },
