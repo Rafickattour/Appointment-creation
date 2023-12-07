@@ -34,10 +34,10 @@ export default function Booking() {
     return (
         <>
             <NewAppointment addData={addDataHandler} onClick={redirectHandler} />
-            {/* <SnackBar
+            <SnackBar
                 open={open === 'snackbar'} autoHideDuration={1500} onClose={closeHandler}
                 message={error ? 'Failed to sent request' : null}
-            /> */}
+            />
         </>
     );
 };
